@@ -7,7 +7,7 @@ Fomos desafiados à colocar em prática todo nosso conhecimento adquirido desde 
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <!---Adicionar, duplicar ou remover conforme necessário--->
-* Descruzou as pernas e fez oração do DEV; 
+* Juntar as mãos e fazer a oração do DEV; 
 * Clonar o repositório na sua máquina e rodar pela IDE Eclipe.
 
 ## :books: Funcionalidades
