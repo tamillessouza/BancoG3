@@ -15,7 +15,7 @@ public class BankApplication {
 		Conta contaDestino = new Conta();
 		ContaService conta1 = new ContaService();
 
-		System.out.println("O que deseja fazer?\n 1 - Deposito \n 2 - Saque \n 3 - Transferência");
+		System.out.println("O que deseja fazer?\n 1 - Deposito \n 2 - Saque \n 3 - Transferência \n 4 - Extrato ");
 
 		escolha = ler.nextInt();
 		if (escolha == 1) {
@@ -49,7 +49,10 @@ public class BankApplication {
 			} else {
 				System.out.println("Valor inválido! ");
 			}
-		} else {
+		}
+		if (escolha == 4) {
+			
+		}else {
 			System.out.println("Operação cancelada pelo usuário!");
 		}
 	}
