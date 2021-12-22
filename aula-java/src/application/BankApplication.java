@@ -1,6 +1,6 @@
 package application;
 
-import view.Menu;
+import bankapp.view.Menu;
 
 public class BankApplication {
 

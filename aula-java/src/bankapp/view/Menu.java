@@ -8,13 +8,14 @@ import bankapp.controller.ContaService;
 
 public class Menu {
 	public void menuGeral() {
-		Scanner input = new Scanner(System.in);
+		
 		int escolha = 0;
 		Conta conta = new Conta();
 		Conta contaDestino = new Conta();
 		ContaService conta1 = new ContaService();
 		
 		while (escolha != 5) {
+			Scanner input = new Scanner(System.in);
 			System.out.println(
 					"O que deseja fazer?\n 1 - Deposito \n 2 - Saque \n 3 - Transferência \n 4 - Extrato \n 5 - Sair");
 
@@ -29,7 +30,7 @@ public class Menu {
 				this.transferencia(contaDestino, conta1, conta);
 			}
 			if (escolha == 4) {
-
+				this.extrato(conta);
 			} else {
 				System.out.println("");
 			}
@@ -77,6 +78,9 @@ public class Menu {
 		} else {
 			System.out.println("Saldo insuficiente para esta transação!");
 		}
+	}
+	public void extrato () {
+		
 	}
 	
 }

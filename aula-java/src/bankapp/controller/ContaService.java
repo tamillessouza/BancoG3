@@ -1,4 +1,4 @@
-package bankapp.service;
+package bankapp.controller;
 
 import bankapp.model.Conta;
 
