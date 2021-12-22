@@ -1,4 +1,4 @@
-package bankapp.repository;
+package bankapp.model;
 
 public class ContaRepository {
 	
