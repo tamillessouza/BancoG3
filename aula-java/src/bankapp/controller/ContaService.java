@@ -30,4 +30,13 @@ public class ContaService {
 			return false;
 		}
 	}
+	public boolean agendar(Conta conta, double valorTransferido, Conta destino) {
+		if (conta.getSaldo() >= valorTransferido) {
+			conta.setSaldo(conta.getSaldo() - valorTransferido);
+			destino.setDepositar(valorTransferido);
+			return true;
+		} else {
+			return false;
+		}
+	}
 }

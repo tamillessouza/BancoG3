@@ -10,7 +10,16 @@ public class Conta {
 	private double depositar;
 	private double sacar;
 	private double transferir;
+	private double agendar;
 	
+	public double getAgendar() {
+		return agendar;
+	}
+
+	public void setAgendar(double agendar) {
+		this.agendar = agendar;
+	}
+
 	// todo metodo é composto por tipo de retorno, nome declarativo e parametros
 	public void setSaldo(double saldo) {
 		this.saldo = saldo; // aponta para o set
