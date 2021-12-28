@@ -79,8 +79,8 @@ public class Menu {
 		System.out.println("Qual valor deseja transferir? \n");
 		Scanner input = new Scanner(System.in);
 		input.useLocale(Locale.ENGLISH);
-		double transferencia;
-		transferencia = input.nextDouble();
+		int transferencia;
+		transferencia = (int) input.nextDouble();
 		if (transferencia <= conta.getSaldo()) {
 			conta1.transferir(conta, transferencia, contaDestino);
 			System.out.println("Transferência de R$" + transferencia + " realizada com sucesso!");
@@ -98,12 +98,13 @@ public class Menu {
 		valorAgendamento = input.nextDouble();
 		if (valorAgendamento <= conta.getSaldo()) {
 			System.out.println("Digite a data desejada");
-			LocalDate dataAgendamento = LocalDate.parse("2022-01-01");
+			LocalDate dataAgendamento = LocalDate.parse("2022-02-03");
 			LocalDate dataAtual = LocalDate.now();
 			if (dataAgendamento.isAfter(dataAtual)) {
-				if (dataAgendamento.isBefore(dataAtual.plusYears(1))) {
-					System.out.println("Agendamento máximo de um mês após a data atual!");
+				if (dataAgendamento.isAfter(dataAtual.plusDays(30))) {
+					System.out.println("Agendamento máximo de 30 dias após a data atual!");
 					System.exit(0);
+					
 				}
 				if (dataAgendamento.getDayOfWeek().ordinal() == 5 || dataAgendamento.getDayOfWeek().ordinal() == 6) {
 					System.out.println("A data escolhida é um final de semana!");
